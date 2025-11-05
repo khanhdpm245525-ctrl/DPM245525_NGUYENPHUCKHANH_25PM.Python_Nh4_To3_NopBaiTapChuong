@@ -1,0 +1,7 @@
+SyntaxError	Lỗi cú pháp	
+NameError	Dùng biến chưa khai báo	
+TypeError	Dùng sai kiểu dữ liệu	
+ValueError	Ép kiểu sai	
+ZeroDivisionError	Chia cho 0
+
+Cách bắt lỗi bằng try - except: Giúp chương trình không bị dừng đột ngột khi có lỗi.

@@ -1,0 +1,5 @@
+#Cách nhập
+#Chuỗi	name = input()	Không cần ép kiểu
+#Số nguyên	x = int(input())	Dùng int()
+#$Số thực	x = float(input())	Dùng float()
+#Nhiều giá trị	a, b = input().split()	Dùng split() và ép kiểu

@@ -1,0 +1,24 @@
+def is_prime(num):
+    if num < 2:
+        return False
+    if num == 2:
+        return True
+    if num % 2 == 0:
+        return False
+    # Kiểm tra các số lẻ từ 3 đến sqrt(num)
+    for i in range(3, int(num**0.5) + 1, 2):
+        if num % i == 0:
+            return False
+    return True
+
+while True:
+    n = int(input("Nhập một số nguyên: "))
+    if is_prime(n):
+        print(f"{n} là số nguyên tố.")
+    else:
+        print(f"{n} không phải là số nguyên tố.")
+
+    tiep = input("Bạn có muốn tiếp tục không? (c/k): ").lower()
+    if tiep != 'c':
+        print("Kết thúc chương trình. Xin cảm ơn!")
+        break

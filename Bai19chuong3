@@ -1,0 +1,14 @@
+import math
+
+# Nhập x và n
+x = float(input("Nhập x: "))
+n = int(input("Nhập n: "))
+
+# Tính S(x, n)
+S = 0
+for i in range(n + 1):
+    mu = 2 * i + 1
+    S += x ** mu / math.factorial(mu)
+
+# In kết quả
+print("Giá trị S(x, n) =", S)

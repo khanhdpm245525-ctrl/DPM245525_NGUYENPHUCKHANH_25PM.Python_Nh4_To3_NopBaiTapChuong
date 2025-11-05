@@ -1,0 +1,38 @@
+-(a) range(5)
+Tương đương: range(0, 5, 1)
+Giá trị: 0, 1, 2, 3, 4
+Bắt đầu từ 0, tăng 1, đến trước 5.
+-(b) range(5, 10)
+Tương đương: range(5, 10, 1)
+Giá trị: 5, 6, 7, 8, 9
+Bắt đầu từ 5, tăng 1, đến trước 10.
+-(c) range(5, 20, 3)
+Giá trị: 5, 8, 11, 14, 17
+Bắt đầu 5, tăng 3 mỗi bước, đến trước 20.
+-(d) range(20, 5, -1)
+Giá trị: 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6
+Bắt đầu 20, giảm 1 mỗi bước, đến trước 5.
+-(e) range(20, 5, -3)
+Giá trị: 20, 17, 14, 11, 8, 5 (KHÔNG BAO GỒM 5 vì stop là 5)
+Giá trị thực tế: 20, 17, 14, 11, 8
+Bắt đầu 20, giảm 3 mỗi bước, đến trước 5.
+-(f) range(10, 5)
+Không có bước nhảy nên mặc định step=1.
+Bắt đầu 10, tăng 1, đến trước 5 → không thỏa điều kiện vì 10 > 5 và step dương.
+Kết quả: dãy rỗng (không có giá trị nào).
+-(g) range(0)
+Tương đương range(0, 0, 1).
+Bắt đầu và kết thúc tại 0.
+Kết quả: dãy rỗng.
+-(h) range(10, 101, 10)
+Giá trị: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+Bắt đầu 10, tăng 10 mỗi bước, đến trước 101.
+-(i) range(10, -1, -1)
+Giá trị: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+Bắt đầu 10, giảm 1 mỗi bước, đến trước -1.
+-(j) range(-3, 4)
+Giá trị: -3, -2, -1, 0, 1, 2, 3
+Bắt đầu -3, tăng 1 mỗi bước, đến trước 4.
+-(k) range(0, 10, 1)
+Giá trị: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Bắt đầu 0, tăng 1 mỗi bước, đến trước 10.

@@ -1,0 +1,27 @@
+def doc_so(n):
+    don_vi = ["", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"]
+    hang_chuc = ["", "mười", "hai mươi", "ba mươi", "bốn mươi",
+                 "năm mươi", "sáu mươi", "bảy mươi", "tám mươi", "chín mươi"]
+
+    if n < 0 or n > 99:
+        return "Chỉ nhập số từ 0 đến 99"
+
+    if n < 10:
+        return "không " + don_vi[n] if n != 0 else "không"
+
+    chuc = n // 10
+    dv = n % 10
+
+    if dv == 0:
+        return hang_chuc[chuc]
+    elif dv == 1 and chuc > 1:
+        return hang_chuc[chuc] + " mốt"
+    elif dv == 5 and chuc > 0:
+        return hang_chuc[chuc] + " lăm"
+    else:
+        return hang_chuc[chuc] + " " + don_vi[dv]
+
+
+# Nhập số và in kết quả
+n = int(input("Nhập số n (0-99): "))
+print("Cách đọc:", doc_so(n))

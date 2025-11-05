@@ -1,0 +1,20 @@
+import datetime
+
+# Nhập ngày, tháng, năm từ người dùng
+ngay = int(input("Nhập ngày: "))
+thang = int(input("Nhập tháng: "))
+nam = int(input("Nhập năm: "))
+
+try:
+    # Tạo đối tượng ngày
+    current_date = datetime.date(nam, thang, ngay)
+
+    # Cộng thêm 1 ngày
+    next_date = current_date + datetime.timedelta(days=1)
+
+    # In ra ngày kế tiếp
+    print("Ngày kế tiếp là: {}/{}/{}".format(next_date.day, next_date.month, next_date.year))
+
+except ValueError:
+    print("Ngày tháng năm không hợp lệ!")
+ 

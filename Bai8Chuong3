@@ -1,0 +1,23 @@
+# Nhập dữ liệu
+a = float(input("Nhập số a: "))
+b = float(input("Nhập số b: "))
+phep_toan = input("Nhập phép toán (+, -, *, /): ")
+
+# Tính toán theo phép toán đã nhập
+if phep_toan == "+":
+    ket_qua = a + b
+    print(f"Kết quả: {a} + {b} = {ket_qua}")
+elif phep_toan == "-":
+    ket_qua = a - b
+    print(f"Kết quả: {a} - {b} = {ket_qua}")
+elif phep_toan == "*":
+    ket_qua = a * b
+    print(f"Kết quả: {a} * {b} = {ket_qua}")
+elif phep_toan == "/":
+    if b != 0:
+        ket_qua = a / b
+        print(f"Kết quả: {a} / {b} = {ket_qua}")
+    else:
+        print("Lỗi: Không thể chia cho 0.")
+else:
+    print("Phép toán không hợp lệ. Vui lòng nhập +, -, * hoặc /.")

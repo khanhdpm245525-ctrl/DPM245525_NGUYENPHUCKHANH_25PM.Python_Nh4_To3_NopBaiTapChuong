@@ -1,0 +1,10 @@
+Cac Kieu Du Lieu
+int	Số nguyên	
+float	Số thực 
+bool	Boolean 	True, False
+str	Chuỗi ký tự	
+list	Danh sách có thứ tự, thay đổi được	
+tuple	Bộ có thứ tự, không thay đổi được	
+set	Tập hợp không có thứ tự, không trùng	
+dict	Từ điển
+NoneType	Đại diện cho "không có giá trị"	
